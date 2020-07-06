@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="Search_TableViewCell" customModule="Real_Estate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wp7-of-dUI">
+                        <rect key="frame" x="0.0" y="10" width="320" height="51"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dYp-JO-AKp">
+                                <rect key="frame" x="10" y="10" width="300" height="31"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search by Location, Area or Pin Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wQi-XK-EZT">
+                                        <rect key="frame" x="0.0" y="0.0" width="276" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wp3-ol-Nid">
+                                        <rect key="frame" x="286" y="0.0" width="14" height="31"/>
+                                        <state key="normal" image="Icon-search"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9575618736495024" green="0.96704268427969542" blue="0.96704268427969542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dYp-JO-AKp" secondAttribute="bottom" constant="10" id="1u9-tE-9DF"/>
+                            <constraint firstAttribute="trailing" secondItem="dYp-JO-AKp" secondAttribute="trailing" constant="10" id="9sx-Kh-cUH"/>
+                            <constraint firstItem="dYp-JO-AKp" firstAttribute="leading" secondItem="wp7-of-dUI" secondAttribute="leading" constant="10" id="YaY-jw-yO2"/>
+                            <constraint firstItem="dYp-JO-AKp" firstAttribute="top" secondItem="wp7-of-dUI" secondAttribute="top" constant="10" id="nkJ-E8-UHb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wp7-of-dUI" secondAttribute="trailing" id="0wS-Xy-KjK"/>
+                    <constraint firstAttribute="bottom" secondItem="wp7-of-dUI" secondAttribute="bottom" constant="15" id="3y9-UI-Csf"/>
+                    <constraint firstItem="wp7-of-dUI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="MJ3-eZ-s7L"/>
+                    <constraint firstItem="wp7-of-dUI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="riY-4N-6yt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="wp7-of-dUI" id="sSM-7x-D0n"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="136.60714285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Icon-search" width="14" height="14"/>
+    </resources>
+</document>
