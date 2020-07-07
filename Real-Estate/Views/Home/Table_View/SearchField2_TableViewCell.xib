@@ -27,6 +27,7 @@
                     </textField>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGF-eY-Ydc">
                         <rect key="frame" x="20" y="22" width="8" height="22"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" image="Icon-back-arrow"/>
                         <connections>
                             <action selector="backButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="n3M-uA-T9o"/>
