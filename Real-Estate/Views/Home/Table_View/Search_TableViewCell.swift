@@ -9,6 +9,8 @@
 import UIKit
 
 class Search_TableViewCell: UITableViewCell {
+    
+    var handler: emptyHandler?
 
     @IBOutlet weak var bgView: UIView!
     override func awakeFromNib() {
@@ -24,6 +26,9 @@ class Search_TableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    @IBAction func searchButton(_ sender: Any) {
+        handler?()
     }
     
 }

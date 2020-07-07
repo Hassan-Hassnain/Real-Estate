@@ -30,6 +30,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wp3-ol-Nid">
                                         <rect key="frame" x="286" y="0.0" width="14" height="31"/>
                                         <state key="normal" image="Icon-search"/>
+                                        <connections>
+                                            <action selector="searchButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="pJu-kh-jZI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
